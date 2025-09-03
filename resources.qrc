@@ -1,0 +1,13 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/qml">
+        <file>qml/main.qml</file>
+        <file>qml/ecggraph.qml</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/heart-monitor.png</file>
+        <file>icons/bluetooth.png</file>
+        <file>icons/record.png</file>
+        <file>icons/export.png</file>
+    </qresource>
+</RCC>
