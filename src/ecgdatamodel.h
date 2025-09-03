@@ -15,7 +15,7 @@ struct EcgReading {
 class EcgDataModel : public QAbstractListModel
 {
     Q_OBJECT
-    QML_ELEMENT
+    // QML_ELEMENT
 
 public:
     enum Roles {

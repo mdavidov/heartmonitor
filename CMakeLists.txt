@@ -61,23 +61,23 @@ set(QML_FILES
 )
 
 # Create executable
-qt6_add_executable(${PROJECT_NAME}
+qt6_add_executable(${PROJECT_NAME}.bin
     src/main.cpp
     resources.qrc
 )
 
 # Add QML module
-qt6_add_qml_module(${PROJECT_NAME}
+qt6_add_qml_module(${PROJECT_NAME}.bin
     URI HeartMonitor
     VERSION 1.0
     QML_FILES ${QML_FILES}
     SOURCES ${SOURCES}
 )
 
-set_target_properties(${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE FALSE)
+set_target_properties(${PROJECT_NAME}.bin PROPERTIES MACOSX_BUNDLE FALSE)
 
 # Link Qt6 libraries
-target_link_libraries(${PROJECT_NAME} PRIVATE
+target_link_libraries(${PROJECT_NAME}.bin PRIVATE
     Qt6::Core
     Qt6::Qml
     Qt6::Quick

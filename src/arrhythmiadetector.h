@@ -16,7 +16,7 @@ struct RRInterval {
 class ArrhythmiaDetector : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
+    // QML_ELEMENT
     
     Q_PROPERTY(bool isMonitoring READ isMonitoring NOTIFY monitoringChanged)
     Q_PROPERTY(QString currentRhythm READ currentRhythm NOTIFY rhythmChanged)

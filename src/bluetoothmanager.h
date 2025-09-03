@@ -15,7 +15,7 @@ QT_FORWARD_DECLARE_CLASS(QBluetoothServiceDiscoveryAgent)
 class BluetoothManager : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
+    // QML_ELEMENT
     
     Q_PROPERTY(bool isScanning READ isScanning NOTIFY scanningChanged)
     Q_PROPERTY(bool isConnected READ isConnected NOTIFY connectionStateChanged)

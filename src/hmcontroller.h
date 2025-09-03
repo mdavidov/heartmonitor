@@ -18,7 +18,7 @@ class ArrhythmiaDetector;
 class HMController : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
+    // QML_ELEMENT
     
     Q_PROPERTY(bool isConnected READ isConnected NOTIFY connectionStatusChanged)
     Q_PROPERTY(int currentHeartRate READ currentHeartRate NOTIFY heartRateChanged)
