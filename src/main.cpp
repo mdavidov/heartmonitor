@@ -21,10 +21,10 @@ int main(int argc, char *argv[])
     app.setOrganizationName("DevOnline");
     
     // Register QML types
-    // qmlRegisterType<HMController>("HeartMonitor", 1, 0, "HMController");
-    // qmlRegisterType<EcgDataModel>("HeartMonitor", 1, 0, "EcgDataModel");
-    // qmlRegisterType<BluetoothManager>("HeartMonitor", 1, 0, "BluetoothManager");
-    // qmlRegisterType<ArrhythmiaDetector>("HeartMonitor", 1, 0, "ArrhythmiaDetector");
+    qmlRegisterType<HMController>("HeartMonitor", 1, 0, "HMController");
+    qmlRegisterType<EcgDataModel>("HeartMonitor", 1, 0, "EcgDataModel");
+    qmlRegisterType<BluetoothManager>("HeartMonitor", 1, 0, "BluetoothManager");
+    qmlRegisterType<ArrhythmiaDetector>("HeartMonitor", 1, 0, "ArrhythmiaDetector");
 
     // Create main controller
     HMController hmController;
