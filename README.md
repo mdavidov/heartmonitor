@@ -1,8 +1,6 @@
-# Heart Rate Monitor
+# Heart Monitor
 
-Now let me create the ECG graph component using QML Canvas:Finally, let me create the CMakeLists.txt and resources file to complete the project:Now let me create a resources file to organize the QML files:I've created a complete Wireless Heart Monitor application using Qt 6 and QML. Here's what the implementation includes:
-
-## **Key Components Created:**
+## **Key Components**
 
 ### **1. C++ Backend Classes:**
 
