@@ -1,4 +1,8 @@
-import QtQuick 2.15
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import QtQml
+
 
 Canvas {
     id: ecgCanvas
@@ -254,23 +258,22 @@ Canvas {
     // Animation for sweep effect when no data
     Timer {
         id: sweepTimer
-        interval: 50
+        interval: 100
         running: !isRunning
         repeat: true
-        
         property real sweepPosition: 0
-        
+
         onTriggered: {
             sweepPosition += 0.02
-            if (sweepPosition > 1.0) sweepPosition = 0
-            
+            if (sweepPosition > 1.0) {
+                sweepPosition = 0
+            }
             // Draw sweep line
             var ctx = ecgCanvas.getContext("2d")
             if (ctx) {
                 ecgCanvas.requestPaint()
-                
                 // Add sweep line
-                Timer.singleShot(1, function() {
+                function addSweepLine() {
                     var ctx2 = ecgCanvas.getContext("2d")
                     ctx2.strokeStyle = Qt.rgba(0.2, 1.0, 0.2, 0.8)
                     ctx2.lineWidth = 1
@@ -279,7 +282,8 @@ Canvas {
                     ctx2.moveTo(x, 0)
                     ctx2.lineTo(x, height)
                     ctx2.stroke()
-                })
+                }
+                addSweepLine()
             }
         }
     }

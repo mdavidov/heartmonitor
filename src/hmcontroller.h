@@ -29,7 +29,7 @@ class HMController : public QObject
     Q_PROPERTY(int alertLevel READ alertLevel NOTIFY alertTriggered)
 
 public:
-    explicit HMController(QObject *parent = nullptr);
+    explicit HMController(QObject* parent = nullptr);
     ~HMController();
 
     // Property getters

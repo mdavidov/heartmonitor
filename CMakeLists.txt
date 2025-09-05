@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.21)
-
 project(HeartMonitor VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 23)
@@ -17,9 +16,9 @@ if(NOT DEFINED CMAKE_PREFIX_PATH)
         set(CMAKE_PREFIX_PATH "/opt/Qt/6.9.1/macos")
         set(CMAKE_MAKE_PROGRAM /opt/homebrew/bin/ninja)  # this is for Qt Creator
     elseif(UNIX)
-        set(CMAKE_MAKE_PROGRAM "/opt/Qt/6.8.1/gcc_arm64")
+        set(CMAKE_MAKE_PROGRAM "/opt/Qt/6.9.1/gcc_arm64")
     elseif(WIN32)
-        set(CMAKE_PREFIX_PATH "C:/Qt/6.8.1/msvc2022_64")
+        set(CMAKE_PREFIX_PATH "C:/Qt/6.9.1/msvc2022_64")
     endif()
 endif()
 
@@ -63,6 +62,7 @@ set(QML_FILES
 # Create executable
 qt6_add_executable(${PROJECT_NAME}.bin
     src/main.cpp
+    qml.qrc
     resources.qrc
 )
 

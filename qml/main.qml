@@ -1,7 +1,8 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Layouts 1.15
-import HeartMonitor 1.0
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import HeartMonitor
+
 
 ApplicationWindow {
     id: mainWindow
@@ -211,7 +212,7 @@ ApplicationWindow {
                     }
                     
                     SequentialAnimation on opacity {
-                        running: parent.visible
+                        running: true //parent.visible
                         loops: Animation.Infinite
                         NumberAnimation { to: 0.7; duration: 500 }
                         NumberAnimation { to: 1.0; duration: 500 }

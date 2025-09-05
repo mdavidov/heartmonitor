@@ -1,5 +1,4 @@
 #include "ecgdatamodel.h"
-#include "ecgdatamodel.moc"
 #include <QDebug>
 
 EcgDataModel::EcgDataModel(QObject *parent)

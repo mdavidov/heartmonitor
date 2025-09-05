@@ -1,0 +1,7 @@
+
+module HeartMonitor
+typeinfo HeartMonitor.qmltypes
+prefer :/qt/qml/HeartMonitor/
+
+module EcgGraph
+EcgGraph 1.0 qml/EcgGraph.qml

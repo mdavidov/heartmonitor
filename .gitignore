@@ -10,6 +10,15 @@
 *.dll
 *.dylib
 
+# Mac
+.DS_Store
+*.app
+
+# CMake
+CMakeLists.txt.user*
+b/
+build/
+
 # Qt-es
 object_script.*.Release
 object_script.*.Debug

@@ -1,10 +1,9 @@
 #include "arrhythmiadetector.h"
-#include "arrhythmiadetector.moc"
 #include <QDebug>
 #include <QtMath>
 #include <QRandomGenerator>
 
-ArrhythmiaDetector::ArrhythmiaDetector(QObject *parent)
+ArrhythmiaDetector::ArrhythmiaDetector(QObject* parent)
     : QObject(parent)
     , m_peakThreshold(MIN_PEAK_HEIGHT)
     , m_lastPeakTime(0)

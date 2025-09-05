@@ -1,5 +1,4 @@
 #include "hmcontroller.h"
-#include "hmcontroller.moc"
 #include "ecgdatamodel.h"
 #include "bluetoothmanager.h"
 #include "arrhythmiadetector.h"

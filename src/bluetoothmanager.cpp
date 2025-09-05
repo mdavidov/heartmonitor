@@ -1,5 +1,4 @@
 #include "bluetoothmanager.h"
-#include "bluetoothmanager.moc"
 #include <QDebug>
 #include <QBluetoothServiceDiscoveryAgent>
 #include <QtMath>
